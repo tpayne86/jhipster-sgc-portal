@@ -1,0 +1,11 @@
+version: '2'
+services:
+  sgcportal-postgresql:
+    image: postgres:12.1
+    # volumes:
+    #     - ~/volumes/jhipster/sgcportal/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=sgcportal
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
